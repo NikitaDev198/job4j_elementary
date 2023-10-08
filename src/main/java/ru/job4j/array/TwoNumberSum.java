@@ -22,10 +22,4 @@ public class TwoNumberSum {
         return new int[0];
     }
 
-    public static void main(String[] args) {
-        int[] array = {0, 5, 10, 12};
-        int target = 17;
-        int[] result = getIndexes(array, target);
-    }
-
 }
