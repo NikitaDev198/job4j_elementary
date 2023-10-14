@@ -13,8 +13,8 @@ public class SimpleStringEncoder {
             } else {
                 result += Character.toString(symbol) + (counter > 1 ? counter : "");
                 counter = 1;
+                symbol = input.charAt(i);
             }
-            symbol = input.charAt(i);
         }
         result += Character.toString(symbol) + (counter > 1 ? counter : "");
         return result;
