@@ -57,4 +57,19 @@ class PointTest {
         assertThat(out).isEqualTo(expected, withPrecision(0.01));
     }
 
+    @Test
+    void when053To657Then7p21() {
+        double expected = 7.21;
+        int x1 = 0;
+        int y1 = 5;
+        int z1 = 3;
+        int x2 = 6;
+        int y2 = 5;
+        int z2 = 7;
+        Point firstPoint = new Point(x1, y1, z1);
+        Point secondPoint = new Point(x2, y2, z2);
+        double out = firstPoint.distance3d(secondPoint);
+        assertThat(out).isEqualTo(expected, withPrecision(0.01));
+    }
+
 }
